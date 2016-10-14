@@ -5,6 +5,9 @@ window.onload = function()
     {
   		bounds[i].onmouseenter = function() {theseWalls()};
    	}
+   	document.getElementById('end').onmouseenter = function(){win()};
+   	//document.getElementById('start').onmouseenter = function(){restart()};
+   	
 	 
 };
 
@@ -16,3 +19,11 @@ function theseWalls()
   		bounds[i].className= 'boundary youlose';
    	}
 }
+ function win()
+ {
+ 	if(document.getElementById('boundary1').className!="boundary youlose")
+ 	{
+ 		window.alert('You win!');
+ 	}
+ }
+
