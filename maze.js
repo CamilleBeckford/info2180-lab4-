@@ -18,12 +18,13 @@ function theseWalls()
     {
   		bounds[i].className= 'boundary youlose';
    	}
+   	document.getElementById('status').innerHTML = 'YOU LOSE';
 }
  function win()
  {
  	if(document.getElementById('boundary1').className!="boundary youlose")
  	{
- 		window.alert('You win!');
+ 		document.getElementById('status').innerHTML = 'YOU WIN';
  	}
  }
 
